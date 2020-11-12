@@ -1,0 +1,35 @@
+{
+  "name": "ligi",
+  "version": "1.0.0",
+  "description": "A light library for keeping DOM lists in sync with arrays",
+  "main": "ligi.umd.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esm": "npx terser -o dist/ligi.esm.min.js -m -- ligi.js",
+    "umd": "npx rollup -c rollup.config.js",
+    "umd-es5": "npx rollup -c rollup.config.es5.js",
+    "build": "npm run umd && npm run umd-es5 && npm run esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/universe-software/ligi.js.git"
+  },
+  "keywords": [
+    "dom",
+    "sync",
+    "binding",
+    "webcomponents"
+  ],
+  "author": "Hyperdraw",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/universe-software/ligi.js/issues"
+  },
+  "homepage": "https://github.com/universe-software/ligi.js#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "rollup": "^2.33.1",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
