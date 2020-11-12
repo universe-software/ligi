@@ -1,8 +1,8 @@
 {
   "name": "ligi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A light library for keeping DOM lists in sync with arrays",
-  "main": "ligi.umd.min.js",
+  "main": "dist/ligi.umd.es5.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "esm": "npx terser -o dist/ligi.esm.min.js -m -- ligi.js",
