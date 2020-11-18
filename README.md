@@ -186,3 +186,7 @@ $_(document.body, {style: {backgroundColor: 'cornflowerblue'}})
   }
 </script>
 ```
+
+## Contributing
+
+To contribute to Ligi, read [the contributing guide](CONTRIBUTING.md).
